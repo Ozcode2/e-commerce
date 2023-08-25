@@ -1,0 +1,1131 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ @keyframes glitter {
+     0% {
+         transform: translate(-50%, -50%) rotate(0deg) scale(1);
+         opacity: 1;
+     }
+
+     50% {
+         transform: translate(-50%, -50%) rotate(180deg) scale(1.2);
+         opacity: 0.8;
+     }
+
+     100% {
+         transform: translate(-50%, -50%) rotate(360deg) scale(1);
+         opacity: 1;
+     }
+ }
+
+ .glitter {
+     position: absolute;
+     width: 5px;
+     height: 5px;
+     background-color: gold;
+     /* Glitter color */
+     border-radius: 50%;
+     animation: glitter 5s infinite;
+ }
+
+#about {
+    width: 30%;
+    /* background-color: #fff; */
+    left: 65%;
+    top: 9vh;
+    transition: box-shadow 0.5s ease;
+    box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, .15);
+    cursor: default;
+    position: absolute;
+}
+
+
+
+#about > * {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #f1eeee;
+    /* Add border bottom after each ID */
+}
+
+#about:hover{
+    transform: none;
+}
+
+#font {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* color: #313133; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#details {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#press{
+    background-color: #F44336;
+    color: white;
+    text-align: center;
+    letter-spacing: normal;
+    word-spacing: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    display: flex;
+    padding-left: 27%;
+    /* align-items: flex-start;
+    position: relative;
+    justify-content: center; */
+}
+
+.btn{
+   position: relative; 
+}
+
+#press:hover{
+    color: white;
+    background-color: rgb(255, 98, 0);
+}
+
+
+
+#font,
+#totalCost,
+#press,
+#details{
+    margin: 5px;
+    
+}
+
+#totalCost{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: color 0.3s;
+}
+
+#totalCost2{
+    position: absolute;
+    left: 52%;
+}
+
+.container{
+    /* background-color: rgba(255, 255, 255, 0.762); */
+    position: relative;
+    min-height: 230vh;
+    min-width: 100%;
+    top: 2vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container-fluid{
+    /* background: linear-gradient(90deg, rgba(72, 160, 107, 1) 18%, rgba(161, 255, 199, 1) 99%); */
+    height: 250vh;
+    width: 100%;
+    position: relative;
+    top: 0vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card > * {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cardHoverClass {
+    box-shadow: 2px 2px 2px 2px #cbc9c9fe;
+}
+
+.navbar {
+    border-bottom: 2px solid orange;
+}
+
+#fast {
+    border: 5px solid orange;
+    position: absolute;
+    top: -5px;
+    left: -1px;
+    right: -2px;
+    height: 3.4rem;
+}
+
+.dark-mode {
+    background-color: #170303;
+    color: white;
+}
+
+.container-mode {
+    background-color: hsl(0, 2%, 10%);
+}
+
+.card-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.border-black {
+    background-color: #191919;
+}
+
+/* Styles for the switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 5vh;
+    visibility: hidden;
+}
+
+#toggleSwitch {
+    visibility: hidden;
+}
+
+/* Styles for the switch slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+/* Styles for the slider's appearance when the switch is on */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* Styles for the switch when it's checked (on) */
+#toggleSwitch:checked+.slider {
+    background-color: #2196F3;
+}
+
+#toggleSwitch:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+#sub-title {
+    font-size: 1rem;
+    color: #fff;
+    padding-top: 18px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 13px;
+    margin-left: 10%;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    left: 20%;
+    top: 0vh;
+}
+
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+#trolley {
+    margin-right: 4px;
+}
+
+#sub-title:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: orange;
+    border-radius: 5px;
+}
+
+
+.nav-item {
+    margin: 10%;
+    transition: 0.4s ease-in-out;
+    display: flex;
+}
+
+.close {
+    position: absolute;
+    top: 1vh;
+    left: 93%;
+    text-align: none;
+}
+
+.navbar i {
+    padding-top: 10px;
+    padding-left: 5px;
+    color: white;
+}
+
+@keyframes fade-animation {
+    0% {
+        opacity: 1;
+        color: gold;
+        border-color: gold;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#img {
+    cursor: pointer;
+    animation: anim 2s infinite;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 1;
+        color: pink;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#userGreeting {
+    position: absolute;
+    font-size: 20px;
+    left: 42%;
+    top: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+
+/*starts from here */
+
+
+.modal {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+    border: none;
+}
+
+.modal-button {
+    cursor: pointer;
+    background-color: orange;
+    font-weight: bold;
+    border: none;
+}
+
+.modal-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#mode {
+    font-weight: 600;
+    color: #000;
+}
+
+#cartPepper {
+    position: absolute;
+    left: 0;
+}
+
+#cartOnion {
+    position: absolute;
+    left: 0;
+}
+
+#cartSpring {
+    position: absolute;
+    left: 0;
+}
+
+#cartEgg {
+    position: absolute;
+    left: 0;
+}
+
+#cartBeans {
+    position: absolute;
+    left: 0;
+}
+
+.card-body #clickOnion {
+    position: absolute;
+    background-color: #F44336;
+    color: white;
+    text-align: center;
+    left: 0%;
+    letter-spacing: normal;
+    word-spacing: normal;
+    width: 100%;
+}
+
+#clickOnion:hover {
+    color: white;
+    background-color: rgb(255, 98, 0);
+}
+
+.card-group #clickOnion {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.card-body #clickBeans {
+    position: absolute;
+    background-color: #F44336;
+    color: white;
+    text-align: center;
+    left: 0%;
+    letter-spacing: normal;
+    word-spacing: normal;
+    width: 100%;
+}
+
+#clickBeans:hover {
+    color: white;
+    background-color: rgb(255, 98, 0);
+}
+
+.card-group #clickBeans {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.card-body #clickPepper {
+    position: absolute;
+    background-color: #F44336;
+    color: white;
+    text-align: center;
+    left: 0%;
+    letter-spacing: normal;
+    word-spacing: normal;
+    width: 100%;
+}
+
+#clickPepper:hover {
+    color: white;
+    background-color: rgb(255, 98, 0);
+}
+
+.card-group #clickPepper {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#springPrice {
+    left: 50%;
+    margin-top: -10vh;
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+}
+
+#eggPrice {
+    left: 50%;
+    margin-top: -10vh;
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+}
+
+#beansPrice {
+    left: 50%;
+    margin-top: -10vh;
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+}
+
+#onionPrice {
+    left: 50%;
+    margin-top: -10vh;
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+}
+
+#price {
+    left: 50%;
+    margin-top: -10vh;
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+}
+
+#pepperPrice {
+    left: 50%;
+    margin-top: -10vh;
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: absolute;
+}
+
+#totalCounter {
+    position: absolute;
+    margin-top: -5vh;
+    margin-left: 4%;
+    background-color: #ff0000;
+    color: #000;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.cart-counter {
+    position: absolute;
+    top: 0.7vh;
+    left: 2%;
+    background-color: green;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+
+#sub-title {
+    font-size: 1rem;
+    color: #fff;
+    padding-top: 18px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 13px;
+    margin-left: 10%;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    left: 20%;
+    top: 0vh;
+}
+
+
+#trolley {
+    margin-right: 4px;
+}
+
+#sub-title:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+#cart {
+    position: absolute;
+    left: 0;
+}
+
+.card a {
+    color: darkblue;
+}
+
+
+.card a:hover {
+    color: darkblue;
+}
+
+.nav-item:hover {
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.nav-item {
+    margin: 10%;
+    transition: 0.4s ease-in-out;
+    display: flex;
+}
+
+
+
+#pop {
+    overflow: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+    color: #313133;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+.card {
+    text-align: left;
+    /* transition: box-shadow 0.5s ease; */
+    position: absolute;
+    left: 1%;
+    top: 8vh;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, .15);
+    max-width: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#cardGroup {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 15%;
+}
+
+#pepper {
+    margin-top: 20px;
+}
+
+#beans {
+    margin-top: 20px;
+}
+
+#spring {
+    margin-top: 20px;
+}
+
+#onion {
+    margin-top: 20px;
+}
+
+#egg {
+    margin-top: 20px;
+}
+
+#tomato{
+    margin-top: 20px;
+}
+
+.card-body #clickTomato {
+    position: absolute;
+    background-color: #F44336;
+    color: white;
+    text-align: center;
+    left: 0%;
+    letter-spacing: normal;
+    word-spacing: normal;
+    width: 100%;
+}
+
+#clickTomato:hover {
+    color: white;
+    background-color: rgb(255, 98, 0);
+}
+
+.card-group #clickTomato {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.card-body #clickSpring {
+    position: absolute;
+    background-color: #F44336;
+    color: white;
+    text-align: center;
+    left: 0%;
+    letter-spacing: normal;
+    word-spacing: normal;
+    width: 100%;
+}
+
+#clickSpring:hover {
+    color: white;
+    background-color: rgb(255, 98, 0);
+}
+
+.card-group #clickSpring {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.card-body #clickEgg {
+    position: absolute;
+    background-color: #F44336;
+    color: white;
+    text-align: center;
+    left: 0%;
+    letter-spacing: normal;
+    word-spacing: normal;
+    width: 100%;
+}
+
+#clickEgg:hover {
+    color: white;
+    background-color: rgb(255, 98, 0);
+}
+
+.card-group #clickEgg {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.card-img-top {
+    height: 5rem;
+    max-width: 15%;
+    box-shadow: 1px 1px 5px 1px #000;
+    left: 3%;
+    top: 2vh;
+    position: relative;
+}
+
+.card-body {
+    height: 7.5rem;
+}
+
+.card-title {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+   display: none;
+}
+
+.del {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #9a9898;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 7px 9px 5px #292828fe;
+    cursor: pointer;
+}
+
+@media (min-width: 701px) and (max-width:767px) {
+
+    #img {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 3%;
+        top: 4vh;
+
+    }
+
+    .nav-item {
+        margin-left: -80%;
+        margin-top: 5vh;
+    }
+
+    #dropdownMenuButton {
+        left: 5%;
+        top: 2vh;
+    }
+  
+    
+}
+
+@media (max-width:700px) {
+
+    #img {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 3%;
+        top: 4vh;
+    }
+
+    .nav-item {
+        margin-left: 80%;
+        margin-top: 5vh;
+    }
+
+    #dropdownMenuButton {
+        left: 5%;
+        top: 2vh;
+    }
+
+    #pop-up {
+        width: 70%;
+        left: 15%;
+    }
+
+    .dropdown .dropdown-menu {
+        top: 13vh;
+        left: -50%;
+    }
+
+
+}
+
+@media (max-width:540px) {
+
+    #img {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 3%;
+        top: 4vh;
+
+    }
+
+    .nav-item {
+        margin-left: 20%;
+        margin-top: 5vh;
+        visibility: hidden;
+    }
+
+    #dropdownMenuButton {
+        left: -30%;
+        top: 0vh;
+    }
+
+    #pop-up {
+        width: 90%;
+        left: 5%;
+        top: 40vh;
+    }
+}
+
+@media (max-width: 270px) {
+    #img {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+
+
+@media (max-width: 769px) {
+    .nav-item {
+        margin-left: 20%;
+        margin-top: 5vh;
+        visibility: hidden;
+    }
+
+    #dropdownMenuButton {
+        left: -100%;
+        top: 0vh;
+    }
+
+    #img {
+        top: 1vh;
+    }
+
+}
+
+
+@media(max-width: 667px) {
+
+    .container-fluid {
+        min-width: 350%;
+        height: 340vh;
+    }
+
+
+    .navbar{
+        min-width: 350%;
+    }
+
+    #about{
+        left: 55%;
+        width: 40%;
+    }
+
+    .wrapper{
+        left: -600%;
+    }
+    
+}
+
+@media(min-width: 668px) and (max-width: 1000px) {
+
+    .container-fluid {
+        min-width: 250%;
+    }
+
+    .navbar {
+        min-width: 250%;
+    }
+
+    #about {
+        left: 55%;
+        width: 40%;
+    }
+
+    .wrapper {
+        left: 100%;
+    }
+
+}
+
+@media(max-width: 522px) {
+    #dropdownMenuButton {
+        margin-left: 10%;
+    }
+
+    .nav-item {
+        margin-left: 10%;
+    }
+
+    /* .container-fluid {
+        height: 200vh;
+    } */
+
+    /* .wrapper {
+        left: -10%;
+    } */
+
+}
+
+@media(min-width: 304px) and (max-width: 400px) {
+    #dropdownMenuButton {
+        margin-left: 50%;
+    }
+
+    .nav-item {
+        margin-left: 10%;
+        margin-top: 23vh;
+    }
+
+
+    /* .container {
+        min-height: 150vh;
+    } */
+
+    /* .card {
+        max-width: 97%;
+    } */
+
+
+    #userGreeting {
+        left: 27%;
+    }
+
+    /* .container-fluid {
+        height: 180vh;
+    } */
+
+    #pop-up {
+        width: 90%;
+        left: 5%;
+        height: 13rem;
+    }
+}
+
+@media (max-width: 304px) {
+    #userGreeting {
+        left: 18%;
+    }
+
+
+    /* .container-fluid {
+        height: 180vh;
+    } */
+
+    #dropdownMenuButton {
+        margin-left: 90%;
+        height: 3rem;
+    }
+
+    /* .wrapper {
+        left: -30%;
+        top: 0vh;
+    } */
+
+    /* .card {
+        max-width: 96%;
+    } */
+}
+
+@media (min-width: 820px) and (max-width: 820.9px) {
+
+
+    /* .container {
+        min-height: 60vh;
+    } */
+
+    #totalCounter {
+        margin-top: -3vh;
+    }
+}
+
+@media (min-width: 912px) and (max-width: 912.9px) {
+
+    /* .container {
+        min-height: 60vh;
+    } */
+
+    #totalCounter {
+        margin-top: -2vh;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 540.9px) {
+
+    /* .container-fluid {
+        min-height: 160vh;
+    }
+
+    .container {
+        min-height: 130vh;
+    } */
+
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    /* .container-fluid {
+        min-height: 300vh;
+    }
+
+    .container {
+        height: 200vh;
+    } */
+
+
+    #userGreeting {
+        top: 0vh;
+    }
+}
+
+@media(min-width: 375px) and (max-width: 375.9px) {
+
+}
+
+@media(min-width: 280px) and (max-width: 280.9px) {
+
+
+    .wrapper {
+        left: -500%;
+    }
+
+}
+
+@media(min-width: 414px) and (max-width: 414.9px) {
+    #totalCounter {
+        margin-top: -3vh;
+    }
+
+}
+
+@media(min-width: 390px) and (max-width: 390.9px) {
+    #totalCounter {
+        margin-top: -3vh;
+    }
+
+}
+
+@media(min-width: 393px) and (max-width: 393.9px) {
+    #totalCounter {
+        margin-top: -3vh;
+    }
+
+}
+
+@media(min-width: 360px) and (max-width: 360.9px) {
+    #totalCounter {
+        margin-top: -4vh;
+    }
+
+}
+
+@media(min-width: 412px) and (max-width: 412.9px) {
+    #totalCounter {
+        margin-top: -3vh;
+    }
+
+}
+
+@media(min-width: 768px) and (max-width: 768.9px) {
+    #totalCounter {
+        margin-top: -3vh;
+    }
+}
+
+@media(min-width: 1280px) and (max-width: 1280.9px) {
+    #totalCounter {
+        margin-top: -4vh;
+    }
+}
+
+
+/* @media(min-width: 668px) and (max-width: 1200px) {
+    .card {
+        max-width: 50%;
+    }
+} */
